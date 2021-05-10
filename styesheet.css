@@ -116,7 +116,6 @@ nav .fa{
     }
     .nav-links ul li{
         display: block;
-        margin: 2.5rem 0;
     }
     .nav-links{
         position: absolute;
@@ -140,6 +139,10 @@ nav .fa{
 
     .nav-links ul{
         padding: 30px;
+    }
+
+    .header{
+        overflow-x: hidden;
     }
 }
 
