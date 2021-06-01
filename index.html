@@ -6,27 +6,26 @@
     <meta charset="UTF-8">
         <link rel="shortcut icon" href="./img/icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="demonstration" content="尋香港">
+        <meta name="demonstration" content="尋·香港">
         <title>尋·香港</title>
         <link rel="stylesheet" href="./css/css01.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/e016628e5a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <script data-ad-client="ca-pub-9974833794931784" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <!--body-->
 <body>
 <!--header-->
 <section class="header">
     <nav>
-<!--logo-->
+<!--logo-->        
     <div class="logo">
-        <a href="./index.html" title="尋·香港"><img src="./img/logo_transparent1.png" alt="logo" height="180px" width="">
+        <a href="./index.html" title="尋·香港"><img src="./img/logo_transparent.png" alt="logo" height="180px" width="">
         </a>      
     </div>
     <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <i class="fa fa-times" onclick="hideMenu()" id="closeicon"></i>
         <ul>
             <li><a href="./index.html">尋·香港</a></li>
             <li><a href="#關於尋·香港">關於尋·香港</a></li>
@@ -90,7 +89,7 @@
                         港，是港口的意思，同時是指此平台。<br>
                         在此港口停泊了很多船隻，表示大家可在此分享不同相片。<br>
                         希望能擴大此平台，形成了一個大港口。
-
+    
                     </p>
                 </div>
     </div>
@@ -157,10 +156,10 @@
 <section class="footer">
     <h4>關注我們</h4>
     <p>
-
+    
     </p>
     <div class="icons">
-        <a href="https://www.facebook.com/LookForHongKongStudio" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="./loading.html" target="_blank"><i class="fa fa-facebook"></i></a>
         <a href="https://www.instagram.com/lookfor.hk___1210/" target="_blank" ><i class="fa fa-instagram"></i></a>
         <a href="./loading.html" target="_blank"><i class="fa fa-twitter"></i></a>
         <!--<a href="mailto: lookforhk1210@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>-->
@@ -173,6 +172,18 @@
 
 
 <!--JavaScript for Toggle Menu-->
+<!--<script>
+    
+     var navLinks = document.getElementById("navLinks");
+
+     function showMenu(){
+         navLinks.style.right = "0";
+     }
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+
+</script>-->
 <script src="./js/js.js"></script>
 </body>
 </html>
