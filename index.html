@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <!--LookForHongKong Studio-->
-<html lang="EN-US">
+<html lang="en">
 <!--head-->
 <head>
     <meta charset="UTF-8">
-        <link rel="shortcut icon" href="./img/icon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="demonstration" content="尋·香港">
-        <title>尋·香港</title>
-        <link rel="stylesheet" href="./css/css00.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <script src="https://kit.fontawesome.com/e016628e5a.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<!--googole ads-->
-        <script data-ad-client="ca-pub-9974833794931784" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尋·香港</title>
+    <link rel="shortcut icon" href="/img/imgs/icon.png">
+    <link rel="stylesheet" href="/css/style01.css">
+    <script src="https://kit.fontawesome.com/e016628e5a.js" crossorigin="anonymous"></script>
 </head>
 <!--body-->
-<body>
-<!--header-->
-<section class="header" id="尋·香港">
-    <nav>
-<!--logo-->        
-    <div class="logo">
-        <a href="https://www.lookforhk1210.tk" title="尋·香港"><img src="./img/logo_transparent.png" alt="logo" height="180px" width="">
-        </a>      
-    </div>
-    <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()" id="closeicons"></i>
-        <ul>
-            <li><a href="https://www.lookforhk1210.tk">尋·香港</a></li>
-            <li><a href="#關於尋·香港" onclick="nav_btn()">關於尋·香港</a></li>
-            <li><a href="#影集" onclick="nav_btn()">影集</a></li>
-            <li><a href="#聯絡" onclick="nav_btn()">聯絡</a></li>
-        </ul>
-    </div>
-    <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-    <div class="text-box">
-        <h class="h1">
-            尋·香港
-        </h>
-        <p class="p1">
-            由一名香港無名攝影師所創辦的分享攝影平台。<br>
-            在平台上會分享香港不同的相片。<br>
-            「計劃在2021年開始」
-        </p>
-        <a href="#關於尋·香港" class="hero-btn" onclick="nav_btn()">關於尋·香港</a>
-    </div>
-</section>
+<body class="body-setting">
+    <!--header-->
+    <section class="section header" id="尋·香港">
+        <nav class="section-header nav" role="navigation">
+            <div class="menu logo">
+                <a href="https://www.lookforhk1210.tk" title="尋·香港">
+                    <img src="/img/imgs/logo_transparent.png" alt="logo" width="" height="180px">
+                </a>
+            </div>
+            <div class="nav menu-btn">
+                <input type="checkbox" id="toggler" class="toggler">
 
-<!--Course-->
+                <label for="toggler">
+                    <div class="menu humburger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+            </div>
+            <div class="menu nav-links">
+                <ul class="menu nav-items">
+                    <li class="menu nav-item">
+                        <a href="https://www.lookforhk1210.tk" class="menu nav-link">
+                            尋·香港
+                        </a>
+                    </li>
+                    <li class="menu nav-item">
+                        <a href="#關於尋·香港" class="menu nav-link" onclick="clickLink()">
+                            關於尋·香港
+                        </a>
+                    </li>
+                    <li class="menu nav-item">
+                        <a href="#影集" class="menu nav-link" onclick="clickLink()">
+                            影集
+                        </a>
+                    </li>
+                    <li class="menu nav-item">
+                        <a href="#聯絡" class="menu nav-link" onclick="clickLink()">
+                            聯絡
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-header text-box">
+                <h class="h1">
+                    尋·香港
+                </h>
+                <p class="p1">
+                    由一名香港無名攝影師所創辦的分享攝影平台。<br>
+                    在平台上會分享香港不同的相片。<br>
+                   「計劃在2021年開始」
+                </p>
+                <a href="#關於尋·香港" class="hero-btn" onclick="clickLink()">
+                    關於尋·香港
+                </a>
+            </div>
+        </nav>
+    </section>
 
-<section class="course" id="關於尋·香港">
+    <!--course-->
+    <section class="course" id="關於尋·香港">
     <h class="h2">
         關於尋·香港
     </h>
@@ -108,107 +129,49 @@
     <p class="p6">
         香港影集
     </p>
-    <!--<div class="row1">-->
-        <!--
-    <div class="row">
-        <div class="works-col">
-           <img src="./img/photo1.jpeg" alt="粉嶺">
-           <div class="layer">
-               <h3>
-                粉嶺
-               </h3>
-               <p>
-                粉嶺位於香港新界東部，是粉嶺／上水新市鎮的一部份；與上水、打鼓嶺和沙頭角同屬於1979年成立的北區。粉嶺原為農田，現在市中心一帶已發展為住宅區，昔日的農田現只可在較偏遠的村落找到。新界五大家族中的鄧氏及彭氏分別定居於粉嶺的龍躍頭、粉嶺樓及粉嶺圍。
-               </p>
-           </div>
-        </div>
-        <div class="works-col">
-            <img src="./img/photo2.jpg" alt="香港">
-            <div class="layer">
-                <h3>
-                    香港
-                </h3>
-                <p>
-                    香港特別行政區位於中國東南方，早期為英國的殖民地。城市的建築構成密集的天際線，不僅擁有大量人口，更充滿發展動能，亦是全球金融重鎮與主要港口。中環 (商業區) 大樓林立，由貝聿銘設計的中國銀行大廈正是其中一棟地標建築。香港素有「購物天堂」的美稱，許多服飾店都提供量身訂製服務，另外還有人聲鼎沸的廟街夜市，蘊含著道地的香港情懷，越夜越熱鬧。
-                </p>
-            </div>
-         </div>
-         <div class="works-col">
-            <img src="./img/photo3.jpeg" alt="尖沙咀">
-            <div class="layer">
-                <h3>
-                    尖沙咀
-                </h3>
-                <p>
-                    尖沙咀是九龍的購物與夜生活第一選擇，點滿霓虹燈招牌的彌敦道旁盡是氣氛輕鬆的餐館和各式各樣的當地商店，鄰近廣東道上則有奢華的百貨商場。維多利亞港邊的尖沙咀海濱花園也是熱門景點，可欣賞香港的天際線景觀；香港文化中心中則有主流音樂會和音樂劇。
-                </p>
-            </div>
-         </div>
-    </div>
--->
-
-<!--img-->
-<!--
-<div class="img-row-padding">
-    <div class="img-half">
-        <img src="./img/img1.jpg" class="img-settings">
-        <img src="./img/img2.jpg" class="img-settings">
-        <img src="./img/img3.jpg" class="img-settings">
-        <img src="./img/img4.jpg" class="img-settings">
-        <img src="./img/img5.jpg" class="img-settings">
-        <img src="img/img6.jpg" class="img-settings">
-        <img src="./img/img7.jpg" class="img-settings">
-    </div>
-</div>
--->
-
-<!--img-->
-
-
-
-<div class="container-img">
+    <div class="container-img">
     <div class="gallery">
     <div class="imge">
-        <img src="./img/img1.jpg" class="img-settings">
+        <img src="/img/imgs/img/img1.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img2.jpg" class="img-settings">
+        <img src="/img/imgs/img/img2.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img3.jpg" class="img-settings">
+        <img src="/img/imgs/img/img3.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img4.jpg" class="img-settings">
+        <img src="/img/imgs/img/img4.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img5.jpg" class="img-settings">
+        <img src="/img/imgs/img/img5.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img6.jpg" class="img-settings">
+        <img src="/img/imgs/img/img6.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img7.jpg" class="img-settings">
+        <img src="/img/imgs/img/img7.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img8.jpg" class="img-settings">
+        <img src="/img/imgs/img/img8.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img9.jpg" class="img-settings">
+        <img src="/img/imgs/img/img9.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/photo1.jpeg" class="img-settings">
+        <img src="/img/imgs/img/photo1.jpeg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/photo3.jpeg" class="img-settings">
+        <img src="/img/imgs/img/photo3.jpeg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/photo2.jpg" class="img-settings">
+        <img src="/img/imgs/img/photo2.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img10.jpg" class="img-settings">
+        <img src="/img/imgs/img/img10.jpg" class="img-settings">
     </div>
     <div class="imge">
-        <img src="./img/img11.jpg" class="img-settings">
+        <img src="/img/imgs/img/img11.jpg" class="img-settings">
     </div>
 </div>
 </div>
@@ -251,29 +214,14 @@
     <div class="icons">
         <a href="https://www.facebook.com/LookForHongKongStudio" target="_blank"><i class="fa fa-facebook"></i></a>
         <a href="https://www.instagram.com/lookfor.hk___1210/" target="_blank" ><i class="fa fa-instagram"></i></a>
-        <a href="./loading.html" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="/loading.html" target="_blank"><i class="fa fa-twitter"></i></a>
         <!--<a href="mailto: lookforhk1210@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>-->
     </div>
-    <h class="p10">© 2021 LookForHongKong Studio Ltd.</h>
+    <h class="h10">© 2021 LookForHongKong Studio Ltd.</h>
 </section>
 
-
-
-
-
-<!--JavaScript for Toggle Menu-->
-<!--<script>
-    
-     var navLinks = document.getElementById("navLinks");
-
-     function showMenu(){
-         navLinks.style.right = "0";
-     }
-     function hideMenu(){
-         navLinks.style.right = "-200px";
-     }
-
-</script>-->
-<script src="./js/js1.js"></script>
+<!--JavaScript-->
+<script src="/js/app.js"></script>
 </body>
+<!--6-9-2021-->
 </html>

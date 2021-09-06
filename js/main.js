@@ -1,28 +1,47 @@
-//mobile app
+//JavaScript
 
-var navLinks = document.getElementById("navLinks");
 
-     function showMenu(){
-         navLinks.style.right = "0";
+/* menu btn */
 
-         //update
-         document.querySelector("body").style.overflow = "hidden";
-     };
-     function hideMenu(){
-         navLinks.style.right = "-200px";
+const menuBtn = document.querySelector(".toggler");
+const menuLinks = document.querySelector(".nav-links");
+// const menuLink = document.querySelector(".nav-link");
 
-         //update
-         document.querySelector("body").style.overflow = "auto";
-     };
+//const  closeMenu = document.querySelector("body");
 
-//update nav-btn
+menuBtn.addEventListener("click", () =>{
+    toggle();
 
-function nav_btn(){
-    document.querySelector("body").style.overflow = "auto";
-    navLinks.style.right = "-200px";
+    /* freeze screen */
+    freeze();
+});
+
+function toggle(){
+    menuBtn.classList.toggle("open");
+    menuLinks.classList.toggle("open");
+};
+
+/** */
+
+const body = document.querySelector(".body-setting");
+
+function freeze(){
+    body.classList.toggle("freeze");
+}
+
+// click menu 
+function clickLink(){
+    body.classList.remove("freeze");
+    
+    menuLinks.classList.remove("open");
+    menuBtn.classList.remove("open");
+
+    document.getElementById("toggler").checked = false;
 };
 
 
+
+//img js settings
 
 //img
 
@@ -78,7 +97,8 @@ window.onload = ()=>{
                     prevBtn.style.display = "block";
                 }
             }
-            document.querySelector("body").style.overflow = "hidden";
+            // document.querySelector("body").style.overflow = "hidden";
+            body.classList.toggle("freeze");
             previewBox.classList.add("show"); 
             shadow.style.display = "block"; 
             closeIcon.onclick = ()=>{
@@ -87,9 +107,12 @@ window.onload = ()=>{
                 nextBtn.style.display = "block";
                 previewBox.classList.remove("show");
                 shadow.style.display = "none";
-                document.querySelector("body").style.overflow = "auto";
+                // document.querySelector("body").style.overflow = "auto";
+                body.classList.remove("freeze");
             }
         }
         
     } 
 }
+
+/*LookForHongKong Studio*/
