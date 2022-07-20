@@ -275,6 +275,10 @@ h.main-album-title {
     border-radius: 3px;
 }
 
+.image-box .fas {
+    color: #F4F2FA;
+}
+
 .slide.prev {
     left: 0px;
 }
