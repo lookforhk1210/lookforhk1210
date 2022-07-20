@@ -12,6 +12,7 @@
 
 * {
     font-family: 'Noto Sans HK', sans-serif;
+    color: #1d1d1f;
 }
 
 html {
@@ -79,7 +80,7 @@ html {
 }
 
 /* text box */
-.text-box {
+.main-home.text-box {
     width: 90%;
     color: #F4F2FA;
     position: absolute;
@@ -89,11 +90,12 @@ html {
     text-align: center;
 }
 
-h.h1 {
+h.text-box-title {
     font-size: 35px;
+    color: #F4F2FA;
 }
 
-p.p1 {
+p.text-box-content {
     margin: 10px 0 40px;
     font-size: 16px;
     color: #F4F2FA;
@@ -120,20 +122,20 @@ p.p1 {
 }
 
 
-/*course*/
-.course {
+/* about */
+section.main-about {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-h.h2 {
+h.main-about-title {
     font-size: 30px;
     font-weight: 600;
 }
 
-p.p2 {
+p.main-about-content {
     color: #F4F2FA;
     font-size: 14px;
     font-weight: 300;
@@ -157,106 +159,30 @@ p.p2 {
     transition: 0.5s;
 }
 
-h.h3 {
+h.course-col-title {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
 
-h.h4 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-h.h5 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
 
 .course-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 
-/*works*/
-h.h6 {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.works {
+/* album */
+section.main-album {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-.works-col {
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-}
-
-.works-col img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.works-col p {
-    padding: 0;
-}
-
-.works-col h3 {
-    margin-top: 16px;
-    margin-bottom: 15;
-    text-align: left;
-}
-
-/*Call to Us*/
-.ctu {
-    margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/background_images/backgroundimg2.jpg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.ctu h1 {
-    color: #F4F2FA;
-    margin-bottom: 40px;
-    padding: 0;
-}
-
-/*footer*/
-.footer {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-
-.footer h4 {
-    margin-bottom: 25px;
-    margin-top: 20px;
+h.main-album-title {
+    font-size: 18px;
     font-weight: 600;
-}
-
-/*icons*/
-.icons .fa {
-    color: #FF384D;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-
-h.h10 {
-    font-family: 'Noto Sans TC', sans-serif;
+    margin: 10px 0;
 }
 
 .container-img {
@@ -278,8 +204,6 @@ h.h10 {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-
-/*imge*/
 
 .preview-box {
     position: fixed;
@@ -381,5 +305,50 @@ h.h10 {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
+
+
+/*Call to Us*/
+section.main-contact {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/background_images/backgroundimg2.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.main-contact.title-container h1 {
+    color: #F4F2FA;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/*footer*/
+section.main-footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.main-footer.title-container h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/*icons*/
+.social-media-icons-container .fa {
+    color: #FF384D;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+h.copyright {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
 
 /*LookForHongKong Studio*/

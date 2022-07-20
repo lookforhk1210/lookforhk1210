@@ -120,7 +120,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .text-box .h1 {
+    .text-box-title {
         font-size: 35px;
     }
 }
