@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap');
+
+:root {
+    --font-family-tc: 'Open Sans', sans-serif;
+    --font-family-hk: 'Noto Sans HK', sans-serif;
+    --color-wh: #F4F2FA;
+    --color-gy: #C8CEDE;
+    --color-rd: #FF384D;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    color: var(--color-wh);
+}
+
+.error-404 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url("/images/background_images/backgroundimg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    color: var(--font-color-wh);
+}
+
+.main-header {
+    margin: 16px 0;
+}
+
+.main-header h4 {
+    /* font-size: 46px; */
+    text-transform: uppercase;
+    font-family: var(--font-family-tc);
+
+    color: var(--color-rd);
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.effect {
+    width: 10.8ch;
+    animation: typing 2s steps(22),
+    blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 46px;
+
+    text-transform: uppercase;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.sub-content {
+    margin: 12px 0;
+}
+
+.sub-content p {
+    font-size: 18px;
+    padding: 2px 0;
+    font-family: var(--font-family-hk);
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #F4F2FA;
+    border: 1px solid #F4F2FA;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #C8CEDE;
+    background-color: #C8CEDE;
+    transition: 1s;
+    color: #374551;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        top: 34%;
+    }
+
+    .sub-content {
+        margin: 18px 9;
+    }
+
+    .effect {
+        width: 11.2ch;
+    }
+}
+
+/*LookForHongKong Studio*/
