@@ -39,6 +39,7 @@ html {
 .nav-links {
     flex: 1;
     text-align: right;
+    z-index: 6;
 }
 
 .nav-links .nav-items .nav-item {
@@ -72,6 +73,7 @@ html {
 /* logo */
 .logo {
     width: 150px;
+    z-index: 6;
 }
 
 /* menu btn */
