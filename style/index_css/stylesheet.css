@@ -181,7 +181,7 @@ section.main-album {
     padding-top: 100px;
 }
 
-h.main-album-title {
+h2.main-album-title {
     font-size: 30px;
     font-weight: 600;
     margin: 10px 0;
@@ -352,8 +352,10 @@ section.main-footer {
     padding: 18px 0;
 }
 
-h.copyright {
+h2.copyright {
     font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 /*LookForHongKong Studio*/
