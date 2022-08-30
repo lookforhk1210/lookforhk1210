@@ -92,9 +92,10 @@ html {
     text-align: center;
 }
 
-h.text-box-title {
+h2.text-box-title {
     font-size: 35px;
     color: #F4F2FA;
+    font-weight: 300;
 }
 
 p.text-box-content {
@@ -132,7 +133,7 @@ section.main-about {
     padding-top: 100px;
 }
 
-h.main-about-title {
+h2.main-about-title {
     font-size: 30px;
     font-weight: 600;
 }
@@ -161,7 +162,7 @@ p.main-about-content {
     transition: 0.5s;
 }
 
-h.course-col-title {
+h2.course-col-title {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
