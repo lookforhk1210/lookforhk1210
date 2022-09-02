@@ -5,12 +5,25 @@
 const menuBtn = document.querySelector(".toggler");
 const menuLinks = document.querySelector(".nav-links");
 
-menuBtn.addEventListener("click", () => {
-    toggle();
+let navIsExpanded = false;
 
-    /* freeze screen */
-    freeze();
+// menuBtn.addEventListener("click", () => {
+//     toggle();
+
+//     /* freeze screen */
+//     freeze();
+// });
+
+menuBtn.addEventListener("click", () => {
+    if (navIsExpanded) {
+        removeEventListener.toggle();
+        removeEventListener.freeze();
+    } else {
+        toggle();
+        freeze();
+    }
 });
+
 
 function toggle() {
     menuBtn.classList.toggle("open");
