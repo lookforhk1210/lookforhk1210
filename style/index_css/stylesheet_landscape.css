@@ -1,4 +1,4 @@
-@media screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
     .nav {
         padding: 1% 6%;
     }
