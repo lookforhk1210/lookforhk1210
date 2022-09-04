@@ -1,11 +1,11 @@
-@media only screen and (max-width: 860) and (max-height: 400) {
+@media only screen and (max-height: 390px) and (max-width: 1024px) {
     .nav {
         padding: 1% 6%;
     }
 
     .nav-links .nav-items .nav-item {
         display: block;
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
 
     .nav-links {
@@ -123,7 +123,7 @@
     }
 }
 
-@media only screen and (max-width: 860) and (max-height: 400) {
+@media only screen and (max-height: 390px) and (max-width: 1024px) {
     .main-home.text-box {
         top: 55%;
     }
