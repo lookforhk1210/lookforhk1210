@@ -3,7 +3,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     diration: 2000,
-    reset: true
+    reset: false
 });
 
 sr.reveal('.text-box-title', {
@@ -16,10 +16,12 @@ sr.reveal('.hero-btn', {
     delay: 240
 });
 sr.reveal('.main-about-title', {
-    delay: 200
+    delay: 200,
+    reset: true
 });
 sr.reveal('.course-col', {
-    interval: 200
+    interval: 200,
+    reset: true
 });
 sr.reveal('.main-album-title', {
     delay: 100
