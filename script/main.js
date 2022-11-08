@@ -24,14 +24,28 @@ function freeze() {
 }
 
 // click menu 
-function clickLink() {
-    body.classList.remove("freeze");
+// function clickLink() {
+//     body.classList.remove("freeze");
 
+//     menuLinks.classList.remove("open");
+//     menuBtn.classList.remove("open");
+
+//     document.getElementById("toggler").checked = false;
+// };
+
+document.querySelectorAll(".activeLink").forEach(item => {
+    item.addEventListener("click", event => {
+        activeLink();
+    })
+});
+
+function activeLink() {
+    body.classList.remove("freeze");
     menuLinks.classList.remove("open");
     menuBtn.classList.remove("open");
-
     document.getElementById("toggler").checked = false;
 };
+
 
 //img js settings
 //getting all required elements
