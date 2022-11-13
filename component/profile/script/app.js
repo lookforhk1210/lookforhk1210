@@ -18,7 +18,7 @@ function toggle() {
 }
 
 function freeze() {
-   body.classList.toggle("freeze");
+    body.classList.toggle("freeze");
 }
 
 document.querySelectorAll(".activeLink").forEach(item => {
@@ -32,3 +32,39 @@ function activeLink() {
     menuLink.classList.remove("open");
     document.getElementById("toggler").checked = false;
 }
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    diration: 2000,
+    reset: false
+});
+
+sr.reveal('.home-text-item', {
+    delay: 100
+});
+
+sr.reveal('.hero-btn', {
+    delay: 240
+});
+
+sr.reveal('.main-founder', {
+    delay: 100
+});
+
+sr.reveal('.main-skills', {
+    delay: 100
+});
+
+sr.reveal('.main-portfolio', {
+    delay: 100
+});
+
+sr.reveal('.project-card-col', {
+    interval: 100,
+    reset: true
+});
+
+sr.reveal('.main-contact', {
+    delay: 100
+});
