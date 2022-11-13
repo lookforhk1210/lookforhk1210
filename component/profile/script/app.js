@@ -21,7 +21,7 @@ function freeze() {
    body.classList.toggle("freeze");
 }
 
-document.querySelectorAll(".navbar-navlink").forEach(item => {
+document.querySelectorAll(".activeLink").forEach(item => {
     item.addEventListener("click", event => {
         activeLink();
     })
