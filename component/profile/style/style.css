@@ -531,3 +531,8 @@ h2.copyright {
     font-weight: 300;
     font-size: 16px;
 }
+
+.project-item:hover {
+    color: var(--color-rd);
+    transition: .5s ease-in-out;
+}
