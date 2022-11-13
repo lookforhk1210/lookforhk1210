@@ -2,7 +2,7 @@
 
 const menuBtn = document.querySelector(".toggler");
 const menuLink = document.querySelector(".navbar-navlinks");
-const body = document.querySelector("body-setting");
+const body = document.querySelector(".body-setting");
 
 menuBtn.addEventListener("click", () => {
     toggle();
@@ -18,13 +18,13 @@ function toggle() {
 }
 
 function freeze() {
-   body.classList.toggle("freeze")
+   body.classList.toggle("freeze");
 }
 
-document.querySelector(".navbar-navlink").forEach(item => {
-   item.addEventListener("click", event => {
-    activeLink();
-   })
+document.querySelectorAll(".navbar-navlink").forEach(item => {
+    item.addEventListener("click", event => {
+        activeLink();
+    })
 })
 
 function activeLink() {
