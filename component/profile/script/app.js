@@ -61,7 +61,7 @@ sr.reveal('.main-portfolio', {
 });
 
 sr.reveal('.project-card-col', {
-    interval: 100,
+    interval: 50,
     reset: true
 });
 
