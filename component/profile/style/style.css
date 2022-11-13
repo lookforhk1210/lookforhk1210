@@ -541,3 +541,6 @@ h2.copyright {
     transition: .5s ease-in-out;
 }
 
+.project-item:visited {
+    color: var(--color-bk);
+}
