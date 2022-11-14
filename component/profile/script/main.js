@@ -40,8 +40,12 @@ const sr = ScrollReveal({
     reset: false
 });
 
-sr.reveal('.home-text-item', {
+sr.reveal('.home-caption', {
     delay: 100
+});
+
+sr.reveal('.home-content', {
+    delay: 200
 });
 
 sr.reveal('.hero-btn', {
