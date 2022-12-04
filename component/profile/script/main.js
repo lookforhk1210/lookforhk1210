@@ -60,6 +60,10 @@ sr.reveal('.main-skills', {
     delay: 100
 });
 
+sr.reveal('.course-col',{
+    interval: 50,
+});
+
 sr.reveal('.main-portfolio', {
     delay: 100
 });
