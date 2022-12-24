@@ -207,6 +207,8 @@ h2.main-album-title {
 
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+
+    cursor: pointer;
 }
 
 .preview-box {

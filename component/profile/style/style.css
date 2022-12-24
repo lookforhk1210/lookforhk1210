@@ -481,6 +481,14 @@ p.home-content {
     height: 100%;
 }
 
+.project-item-title {
+    text-align: left;
+}
+
+.project-item-subtitle {
+    text-align: right;
+}
+
 @media only screen and (max-width: 700px) {
     .project-card {
         column-count: 1;
