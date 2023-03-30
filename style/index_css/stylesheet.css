@@ -316,6 +316,23 @@ h2.main-album-title {
     filter: grayscale(0);
 }
 
+.more-browser-hero-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.more-browser-link {
+    text-decoration: none;
+}
+
+.more-browser {
+    color: #FF384D;
+}
+
+.fa-arrow-right {
+    color: #FF384D;
+}
 
 /* contact */
 section.main-contact {
