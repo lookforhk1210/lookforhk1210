@@ -232,6 +232,7 @@ h2.main-album-title {
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.3s ease;
+    z-index: 22;
 }
 
 .preview-box .details {
@@ -308,6 +309,7 @@ h2.main-album-title {
     display: none;
     background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(6px);
+    z-index: 12;
 }
 
 .gallery .imge:hover img {
