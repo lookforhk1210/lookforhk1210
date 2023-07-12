@@ -7,13 +7,16 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.text-box-title', {
-    delay: 100
+    delay: 100,
+    reset: true
 });
 sr.reveal('.text-box-content', {
-    delay: 200
+    delay: 200,
+    reset: true
 });
 sr.reveal('.hero-btn', {
-    delay: 240
+    delay: 240,
+    reset: true
 });
 sr.reveal('.main-about-title', {
     delay: 200,
@@ -34,4 +37,8 @@ sr.reveal('.container-img', {
 });
 sr.reveal('.main-contact', {});
 
+sr.reveal('.main-contact.title-container', {
+    delay: 100,
+    reset: true
+});
 /*LookForHongKong Studio*/
