@@ -310,7 +310,7 @@ h2.main-album-title {
     background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    z-index: 12;
+    z-index: 18;
 }
 
 .gallery .imge:hover img {
