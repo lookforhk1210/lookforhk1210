@@ -383,4 +383,20 @@ h2.copyright {
     font-size: 16px;
 }
 
+.social-media-icons-container a {
+    text-decoration: none;
+    display: block;
+    margin: 18px 20px
+}
+
+.social-media-icons-container a svg {
+    display: block;
+}
+
+.social-media-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*LookForHongKong Studio*/
