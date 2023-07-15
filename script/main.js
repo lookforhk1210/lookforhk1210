@@ -119,4 +119,22 @@ window.onload = () => {
 }
 
 
+function checkScroll() {
+    const windowHeight = window.innerHeight;
+    gallery.forEach((img) => {
+        const imgTop = img.getBoundingClientRect().top;
+        const imgBottom = img.getBoundingClientRect().bottom;
+        if (imgTop < windowHeight && imgBottom >= 0) {
+            img.classList.add("fade-in");
+            img.classList.remove("fade-out");
+        } else {
+            img.classList.add("fade-out");
+            img.classList.remove("fade-in");
+        }
+    });
+}
+
+window.addEventListener("scroll", checkScroll);
+
+
 /*LookForHongKong Studio*/
