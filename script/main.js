@@ -136,5 +136,11 @@ function checkScroll() {
 
 window.addEventListener("scroll", checkScroll);
 
+window.addEventListener('scroll', function () {
+    if (window.location.hash) {
+        history.replaceState(null, null, window.location.href.split('#')[0]);
+    }
+});
+
 
 /*LookForHongKong Studio*/
