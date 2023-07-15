@@ -116,7 +116,7 @@ window.onload = () => {
         }
 
     }
-}
+};
 
 
 function checkScroll() {
@@ -132,7 +132,7 @@ function checkScroll() {
             img.classList.remove("fade-in");
         }
     });
-}
+};
 
 window.addEventListener("scroll", checkScroll);
 
