@@ -27,10 +27,12 @@ sr.reveal('.course-col', {
     reset: true
 });
 sr.reveal('.main-album-title', {
-    delay: 100
+    delay: 100,
+    reset: true
 });
 sr.reveal('.main-album-content', {
-    delay: 200
+    delay: 200,
+    reset: true
 });
 sr.reveal('.container-img', {
     delay: 100
@@ -40,4 +42,12 @@ sr.reveal('.main-contact.title-container', {
     delay: 100,
     reset: true
 });
+
+sr.reveal('.more-browser-hero-btn', {
+    origin: 'left',
+    delay: 100,
+    reset: true
+});
+
+
 /*LookForHongKong Studio*/
