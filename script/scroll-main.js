@@ -35,7 +35,6 @@ sr.reveal('.main-album-content', {
 sr.reveal('.container-img', {
     delay: 100
 });
-sr.reveal('.main-contact', {});
 
 sr.reveal('.main-contact.title-container', {
     delay: 100,
