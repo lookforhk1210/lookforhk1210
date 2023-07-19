@@ -552,6 +552,14 @@ h2.copyright {
     transition: .5s ease-in-out;
 }
 
+.project-item img {
+    transition: all .8s ease-in-out;
+}
+
+.project-item:hover img {
+    box-shadow: 7px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
 .social-media-icons-container a {
     text-decoration: none;
     display: block;
