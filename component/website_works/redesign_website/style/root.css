@@ -1,0 +1,22 @@
+
+
+:root {
+    --bg-color-01: #FFAF5F;
+    --bg-color-02: #D961C5;
+    --bg-color-03: #6DC9DC;
+    --bg-color-04: #FFA99C;
+    --bg-color-05: #FFD123;
+}
+
+:root {
+    --color-wh: #f2f2f2;
+    --color-bk: #000;
+    --color-rd: #DF2829;
+    --color-gn: #69bd43;
+}
+
+:root {
+    --font-size-nav: 16px;
+    --font-size-md: 20px;
+    --font-size-lg: 48px;
+}

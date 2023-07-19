@@ -70,7 +70,7 @@ sr.reveal('.main-portfolio', {
 
 sr.reveal('.project-card-col', {
     interval: 50,
-    reset: true
+    reset: false
 });
 
 sr.reveal('.main-contact', {

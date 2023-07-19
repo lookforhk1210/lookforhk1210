@@ -457,6 +457,8 @@ p.home-content {
 .project-item {
     width: 60%;
     margin: auto;
+    margin-bottom: 26px;
+    display: inline-block;
 }
 
 
