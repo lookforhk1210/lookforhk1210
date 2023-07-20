@@ -28,7 +28,8 @@
     }
 }
 
-@media screen and (max-width: 390px) and (max-height: 844px) { 
+/* @media screen and (max-width: 390px) and (max-height: 844px) {  */
+@media only screen and (max-width: 700px) {
     .nav-menu-btn {
         position: relative;
         width: 30px;
@@ -65,20 +66,20 @@
     }
 
     /*******************************************************************/
-   
-    .navbar {
-    margin: 0 40px;
-    padding-top: 40px;
-   }
 
-   .navbar-item {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-   }
-    
+    .navbar {
+        margin: 0 40px;
+        padding-top: 40px;
+    }
+
+    .navbar-item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+
     .menu-toggle {
         padding-left: 0;
         position: absolute;
@@ -86,14 +87,14 @@
         /* justify-content: space-around; */
         justify-content: center;
         right: -100%;
-       
+
         top: 0;
         min-height: 100vh;
         background: var(--color-gn);
 
         transition: all .8s ease-in-out;
 
-        
+
     }
 
     .nav-menu .menu-items .menu-item {
@@ -102,37 +103,33 @@
         text-align: center;
     }
 
-    .menu {
-       
-    }
+    .menu {}
 
-    .menu-items .menu-item .menu-link {
-        
-    }
-    
+    .menu-items .menu-item .menu-link {}
+
     .nav-language-btn {
-       position: absolute;
+        position: absolute;
         bottom: 15%;
     }
-    
+
     .open {
         right: 0;
-       
+
     }
 
     /*********************************************************************/
-    
+
     .product-section {
         position: relative;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
-    #image-container img{
+    #image-container img {
         /* display: none; */
         width: 226px;
     }
 
-    .background-logo-layout img{
+    .background-logo-layout img {
         width: 310px;
         height: 523px;
     }
@@ -152,7 +149,7 @@
     .product-item {
         /* display: none; */
         top: 69%;
-       left: 46px;
+        left: 46px;
     }
 
     .product-caption {
@@ -173,5 +170,5 @@
     .effect.scroll {
         transform: scale(3);
     }
-    
+
 }

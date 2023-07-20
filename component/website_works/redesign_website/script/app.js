@@ -107,11 +107,14 @@ window.addEventListener('scroll', () => {
 
 /*************************************************************************************** */
 
-// const navMenuBtn = document.getElementById("nav_menu_btn");
-// const toggler = document.getElementById("toggler");
-// const menuToggle = document.querySelector(".menu-toggle");
+const navMenuBtn = document.getElementById("nav_menu_btn");
+const toggler = document.getElementById("toggler");
+const menuToggle = document.querySelector(".menu-toggle");
 
-// toggler.addEventListener("click", () =>{
-//     toggle();
-// })
+toggler.addEventListener("click", () => {
+    toggle();
+})
 
+function toggle() {
+    menuToggle.classList.toggle("open");
+}
