@@ -409,4 +409,11 @@ h2.copyright {
     opacity: 0;
 }
 
+.prev-close {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*LookForHongKong Studio*/

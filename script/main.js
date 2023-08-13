@@ -52,7 +52,8 @@ function activeLink() {
 const gallery = document.querySelectorAll(".imge"),
     previewBox = document.querySelector(".preview-box"),
     previewImg = previewBox.querySelector("img"),
-    closeIcon = previewBox.querySelector(".icon"),
+    // closeIcon = previewBox.querySelector(".icon"),
+    closeIcon = previewBox.querySelector(".prev-close"),
     currentImg = previewBox.querySelector(".current-img"),
     totalImg = previewBox.querySelector(".total-img"),
     shadow = document.querySelector(".shadow");
